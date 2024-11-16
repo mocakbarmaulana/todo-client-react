@@ -1,11 +1,12 @@
-import { useState } from "react";
+import { useContext } from "react";
 import { Layout, theme, Button } from "antd";
 import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
+import { SidebarContext } from "@context/SidebarContext";
 
 const { Header: HeaderAnt } = Layout;
 
 export default function Header() {
-  const [collapsed, setCollapsed] = useState(false);
+  const { collapsed, toggleSidebar } = useContext(SidebarContext)
   const {
     token: { colorBgContainer },
   } = theme.useToken();
@@ -15,7 +16,7 @@ export default function Header() {
       <Button
         type="text"
         icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
-        onClick={() => setCollapsed(!collapsed)}
+        onClick={toggleSidebar}
         style={{
           fontSize: "16px",
           width: 64,

@@ -9,6 +9,9 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
+      "@/": resolve(root),
+      "@assets": resolve(root, "assets"),
+      "@context": resolve(root, "context"),
       "@pages": resolve(root, "pages"),
       "@layouts": resolve(root, "layouts"),
       "@typings": resolve(root, "typings"),
