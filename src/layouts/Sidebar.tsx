@@ -21,7 +21,7 @@ export default function Sidebar() {
       <Menu
         theme="dark"
         mode="inline"
-        defaultSelectedKeys={["1"]}
+        defaultSelectedKeys={["5"]}
         // make sure text is not cut off
         style={{ overflow: "auto", textOverflow: "ellipsis" }}
         items={[
