@@ -1,5 +1,5 @@
 import { Layout as LayoutAntd } from 'antd';
-import { Sidebar, Header, Content } from '@layouts/index';
+import { Sidebar, Header, Content, Footer } from '@layouts/index';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 
@@ -24,6 +24,7 @@ export default function Layout() {
       <LayoutAntd>
         <Header />
         <Content />
+        <Footer />
       </LayoutAntd>
     </LayoutAntd>
   );

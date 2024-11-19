@@ -5,6 +5,8 @@ import { LogoipsumShortWhite, LogoipsumLongWhite } from "@assets/index";
 import { menus } from "@configs/index";
 import { useNavigate } from "react-router-dom";
 
+import "@assets/styles/sidebar.css";
+
 const { Sider } = Layout;
 
 export default function Sidebar() {

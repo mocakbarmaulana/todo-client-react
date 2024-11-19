@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ant-menu-item-selected {
+    @apply !bg-white !text-primary;
+}
+
+.ant-menu-item {
+    @apply hover:!bg-white hover:!text-primary text-white;
+}

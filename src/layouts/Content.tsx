@@ -11,7 +11,7 @@ export default function Content() {
       style={{
         margin: "1.5rem 1rem",
         padding: "1rem",
-        minHeight: "calc(100vh - 7rem)",
+        minHeight: "calc(100vh - 10rem)",
         background: colorBgContainer,
         borderRadius: borderRadiusLG,
       }}
