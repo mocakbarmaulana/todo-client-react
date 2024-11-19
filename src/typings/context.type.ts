@@ -1,5 +1,6 @@
 export interface ISidebarContextType {
   collapsed: boolean;
+  activeKey: string;
   toggleSidebar: () => void;
 }
 

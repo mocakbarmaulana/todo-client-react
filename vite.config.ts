@@ -11,6 +11,7 @@ export default defineConfig({
     alias: {
       "@/": resolve(root),
       "@assets": resolve(root, "assets"),
+      "@configs": resolve(root, "configs"),
       "@context": resolve(root, "context"),
       "@pages": resolve(root, "pages"),
       "@layouts": resolve(root, "layouts"),
